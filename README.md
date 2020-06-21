@@ -1,1 +1,1 @@
-My take on `transducers`
+My take on `transducers`, wip.
