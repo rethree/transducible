@@ -1,0 +1,40 @@
+{
+  "name": "@rethree/transducible",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "tanfonto <tanfonto@pm.me>",
+  "keywords": [
+    "transducers",
+    "functional programming",
+    "typescript"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/rethree/transducible",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js 'lib/**/*.ts'",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "devDependencies": {
+    "@types/node": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "ava": "^3.9.0",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.0.1",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.9.5"
+  }
+}
